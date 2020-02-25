@@ -49,7 +49,7 @@ class TwigRendererTest extends TestCase
 
     protected function tearDown(): void
     {
-        if(file_exists('./tmp')){
+        if (file_exists('./tmp')) {
             $this->deleteFile('./tmp');
         }
     }
@@ -59,13 +59,12 @@ class TwigRendererTest extends TestCase
      */
     private function deleteFile(string $folder): void
     {
-        foreach(scandir($folder) as $file)
-        {
-            if($file === '.' || $file === '..'){
+        foreach (scandir($folder) as $file) {
+            if ($file === '.' || $file === '..') {
                 continue;
             }
 
-            if (is_dir($folder . '/' . $file)){
+            if (is_dir($folder . '/' . $file)) {
                 $this->deleteFile($folder . '/' . $file);
             } else {
                 unlink($folder . '/' . $file);

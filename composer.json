@@ -1,17 +1,29 @@
 {
-    "name": "hulotte/renderer",
-    "description": "Manage your template",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "sebastien CLEMENT",
-            "email": "s.clement@la-taniere.net"
-        }
-    ],
-    "minimum-stability": "dev",
-    "require": {},
-    "require-dev": {
-        "phpunit/phpunit": "^9.1@dev",
-        "squizlabs/php_codesniffer": "^3.0@dev"
+  "authors": [
+    {
+      "name": "sebastien CLEMENT",
+      "email": "s.clement@la-taniere.net"
     }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Hulotte\\": "Hulotte"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "tests\\": "tests"
+    }
+  },
+  "description": "Manage your template",
+  "license": "MIT",
+  "minimum-stability": "dev",
+  "name": "hulotte/renderer",
+  "require": {
+    "twig/twig": "3.x-dev"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.1@dev",
+    "squizlabs/php_codesniffer": "^3.0@dev"
+  }
 }

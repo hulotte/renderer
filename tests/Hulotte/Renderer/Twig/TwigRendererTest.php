@@ -16,7 +16,7 @@ class TwigRendererTest extends TestCase
     /**
      * @var TwigRendererFactory
      */
-    private $factory;
+    private TwigRendererFactory $factory;
 
     /**
      * @covers \Hulotte\Renderer\Twig\TwigRenderer::render

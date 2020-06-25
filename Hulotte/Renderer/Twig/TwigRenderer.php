@@ -20,7 +20,7 @@ class TwigRenderer implements RendererInterface
     /**
      * @var Environment
      */
-    private $twig;
+    private Environment $twig;
 
     /**
      * TwigRenderer constructor.
